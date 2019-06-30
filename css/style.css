@@ -3,9 +3,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
+  width: 100%;
 }
 
 nav {
@@ -27,6 +29,8 @@ nav {
   display: flex;
   width: 30%;
   justify-content: space-around;
+  position: fixed;
+  right: 0%;
 }
 
 .nav-links a {
@@ -51,10 +55,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-
   .nav-links {
     position: absolute;
     right: 0px;
