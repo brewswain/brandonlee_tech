@@ -14,7 +14,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 7vh;
   background-color: #555555;
 }
 
@@ -91,4 +91,8 @@ nav {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.placeholder-image1 {
+  height: 92vh;
 }
