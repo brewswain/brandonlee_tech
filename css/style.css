@@ -61,6 +61,12 @@ nav {
   .nav-links {
     width: 40%;
   }
+
+  .placeholder-image1 {
+    max-width: 100%;
+    max-height: 70%;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -101,7 +107,7 @@ nav {
 
   .placeholder-image1 {
     max-width: 100%;
-    max-height: 70%;
+    max-height: 50%;
     display: block;
   }
 }
