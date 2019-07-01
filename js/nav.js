@@ -1,52 +1,64 @@
+const menuSlider = document.querySelector(".menu-toggle");
+const menuBars = document.querySelector(".fa-bars");
+const nav = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-links li");
+let query = window.matchMedia("(max-width: 768px)");
+
+nav.classList.replace("nav-collapse", "nav-active");
+
 const navTransition = () => {
-  const menuSlider = document.querySelector(".menu-toggle");
-  const menuBars = document.querySelector(".fa-bars");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
+  nav.addEventListener("click", () => {
+    menuSliderToggle();
+    menuBarToggle();
+  });
+
+  //Animate Links
+  navLinks.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = "";
+    } else {
+      link.style.animation = `navlinkFade 0.5s ease forwards ${index / 7 +
+        0.3}s`;
+    }
+  });
 
   menuSlider.addEventListener("click", () => {
-    // Toggle Navbar
-    if (nav.classList.contains("nav-active")) {
-      nav.classList.replace("nav-active", "nav-collapse");
-    } else if (nav.classList.contains("nav-collapse")) {
-      nav.classList.replace("nav-collapse", "nav-active");
-    } else {
-      nav.classList.toggle("nav-active");
-    }
-
-    //Animate Links
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navlinkFade 0.5s ease forwards ${index / 7 +
-          0.3}s`;
-      }
-    });
-
-    //Menu-Toggle animation
-    menuBars.classList.toggle("fa-slash");
+    menuSliderToggle();
   });
 
   nav.addEventListener("click", () => {
-    if (nav.classList.contains("nav-active")) {
-      nav.classList.replace("nav-active", "nav-collapse");
-    } else if (nav.classList.contains("nav-collapse")) {
-      nav.classList.replace("nav-collapse", "nav-active");
-    } else {
-      nav.classList.toggle("nav-active");
-    }
+    menuBars.classList.toggle("fa-slash");
+  });
 
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navlinkFade 0.5s ease forwards ${index / 7 +
-          0.3}s`;
-      }
-    });
+  // navLinks.forEach((link, index) => {
+  //   if (link.style.animation) {
+  //     link.style.animation = "";
+  //   } else {
+  //     link.style.animation = `navlinkFade 0.5s ease forwards ${index / 7 +
+  //       0.3}s`;
+  //   }
+  // });
 
-    menuBars.classList.replace("fa-slash", "fa-bars");
+  //Menu-Toggle animation
+  menuBars.addEventListener("click", () => {
+    menuBars.classList.toggle("fa-slash");
   });
 };
-navTransition();
+
+let menuSliderToggle = function() {
+  if (nav.classList.contains("nav-active")) {
+    nav.classList.replace("nav-active", "nav-collapse");
+  } else if (nav.classList.contains("nav-collapse")) {
+    nav.classList.replace("nav-collapse", "nav-active");
+  } else {
+    nav.classList.toggle("nav-active");
+  }
+};
+
+if (query.matches) {
+  navTransition();
+} else {
+  menuSlider.addEventListener("click", () => {
+    menuSliderToggle();
+  });
+}
