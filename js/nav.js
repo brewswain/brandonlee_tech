@@ -3,7 +3,6 @@ const menuBars = document.querySelector(".fa-bars");
 const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links li");
 let query = window.matchMedia("(max-width: 768px)");
-
 nav.classList.replace("nav-collapse", "nav-active");
 
 const navTransition = () => {

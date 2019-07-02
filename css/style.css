@@ -41,6 +41,11 @@ nav {
   text-decoration: none;
 }
 
+.logo a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 .nav-links li {
   list-style: none;
 }
@@ -79,11 +84,12 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 100%;
     transform: translatex(100%);
     transition: transform 0.5s ease-in;
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   .nav-links li {
