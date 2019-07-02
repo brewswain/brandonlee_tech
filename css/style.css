@@ -10,6 +10,11 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+/* NavBar */
 nav {
   position: fixed;
   width: 100%;
@@ -60,6 +65,84 @@ nav {
   color: whitesmoke;
   display: none;
   cursor: pointer;
+}
+
+/* Main site functionality */
+.placeholder-image1 {
+  padding-top: 8vh;
+  height: 96vh;
+}
+
+.section-projects {
+  background-color: #555555;
+}
+
+.section-text {
+  text-align: center;
+  /* height: 35vh; */
+  font-size: 2.7rem;
+}
+
+/* Projects Section */
+.project-info {
+  color: rgb(233, 233, 233);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project img {
+  width: 70%;
+  border: 2px white solid;
+}
+
+.project img:hover {
+  opacity: 0.5;
+  border-color: #99f8ff;
+}
+
+.button {
+  display: block;
+  width: 70%;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+
+.button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.button-light {
+  background: #c7c7c7;
+  color: black;
+}
+
+.button-dark {
+  background: #414141;
+  color: whitesmoke;
+}
+
+.project-1 {
+}
+
+.project-2 {
+}
+
+.project-3 {
+}
+
+.project-4 {
+}
+
+.project-image-1 {
+}
+
+.project-title {
+}
+
+.project-description {
 }
 
 @media screen and (max-width: 1024px) {
@@ -116,20 +199,27 @@ nav {
     max-height: 50%;
     display: block;
   }
-}
 
-@keyframes navlinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
+  .project-info {
+    grid-template-areas:
+      "project-1"
+      "project-2"
+      "project-3"
+      "project-4";
 
-.placeholder-image1 {
-  padding-top: 8vh;
-  height: 96vh;
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile */
+
+  @keyframes navlinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 }
