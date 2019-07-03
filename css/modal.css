@@ -16,8 +16,9 @@
   margin: 0 auto;
   padding: 1rem 3rem;
   text-decoration: none;
-  background: #fff;
+  background: none;
   border: 2px #0077ff solid;
+  cursor: pointer;
 }
 .modal-content {
   background: #f4f4f4;
@@ -60,4 +61,12 @@
   text-align: center;
   box-sizing: inherit;
   display: flex;
+  justify-content: space-around;
+
+  background: none;
+}
+
+.modal-footer a {
+  background: none;
+  color: black;
 }

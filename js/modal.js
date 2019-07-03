@@ -4,7 +4,7 @@ const modalProject2 = document.getElementById("modal-project2");
 const modalProject3 = document.getElementById("modal-project3");
 const modalProject4 = document.getElementById("modal-project4");
 
-// Open Modal from button click.
+// Open Modal from button click
 const modalButton1 = document.getElementById("project-1");
 const modalButton2 = document.getElementById("project-2");
 const modalButton3 = document.getElementById("project-3");
@@ -43,6 +43,7 @@ function openModal() {
   modalProject.style.opacity = "1";
 }
 
+// Function to close modal once outside of the modal is clicked
 function closeModal(event) {
   if (event.target == modalProject1) {
     modalProject.style.opacity = "0";

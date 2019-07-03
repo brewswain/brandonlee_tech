@@ -97,6 +97,10 @@ nav {
 
 /* Projects Section */
 
+.project-text {
+  padding: 4vh;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -210,10 +214,6 @@ nav {
     transition: transform 0.5s ease-in;
     cursor: pointer;
     opacity: 0.8;
-  }
-
-  .nav-links li {
-    opacity: 0;
   }
 
   .fa-bars {
