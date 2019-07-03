@@ -12,6 +12,7 @@
     />
     <script src="https://kit.fontawesome.com/7cafbc0180.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css">
     <link
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
@@ -41,7 +42,85 @@
       </div>
     </nav>
 
+    <div id="modal-project1" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="pic1-modal.jpg" alt="">
+          </div>
+          <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+            mollit anim id est laborum.</p>
+        </div>
+        <div class="modal-footer">
+          <div class="button">View Demo</div>
+          <div class="button">Github</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-project2" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="pic2-modal.jpg" alt="">
+        </div>
+        <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+          mollit anim id est laborum.</p>
+      </div>
+      <div class="modal-footer">
+        <div class="button">View Demo</div>
+        <div class="button">Github</div>
+      </div>
+    </div>
+  </div>
+      
+    <div id="modal-project3" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="pic3-modal.jpg" alt="">
+        </div>
+        <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+          mollit anim id est laborum.</p>
+      </div>
+      <div class="modal-footer">
+        <div class="button">View Demo</div>
+        <div class="button">Github</div>
+      </div>
+    </div>
+  </div>
+        
+    <div id="modal-project4" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="pic4-modal.jpg" alt="">
+        </div>
+        <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+          ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+          mollit anim id est laborum.</p>
+      </div>
+      <div class="modal-footer">
+        <div class="button">View Demo</div>
+        <div class="button">Github</div>
+      </div>
+    </div>
+  </div>
+                
+
     <div id="fullpage"> 
+      
       <div data-anchor="home" class="section">
         <img
           class="placeholder-image1"
@@ -49,6 +128,10 @@
           alt="round"
         />
         <h1>Home</h1>
+
+
+
+
       </div>
       <section data-anchor="projects" class="section section-projects">
         <h1 class="section-text project-text">
@@ -102,7 +185,7 @@
                   <p>Vanilla Javascript</p>
                 </div>
               
-              <div class="button" class="project-4">LEARN MORE</div>
+              <div class="button" id="project-4">LEARN MORE</div>
             </div>
             </div>
           </div>
@@ -119,6 +202,7 @@
     
 
     <script src="js/nav.js"></script>
+    <script src="js/modal.js"></script>
     <!--Fullscreen.js-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"
