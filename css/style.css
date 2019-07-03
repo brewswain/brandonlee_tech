@@ -102,20 +102,108 @@ nav {
 
 /* Projects Section */
 
-section .container {
+.container {
   max-width: 1000px;
   margin: 0 auto;
+  height: auto;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 335px;
+  grid-gap: 0;
+}
+
+.container .card {
+  position: relative;
+  overflow: hidden;
+  height: 335px;
+  max-width: 500px;
+  width: calc(50vw - 8px);
+}
+
+.container .card .img-box {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.button {
+  margin: 0 auto;
+  font-size: 13pt;
+  padding: 7px 0;
+}
+
+.container .card:hover .img-box {
+  opacity: 0;
+}
+
+.container .card .content .caption {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: 125%;
+  text-align: center;
+}
+
+.container .card:hover .content .caption {
+  bottom: 25%;
+  transition: 0.5s;
+}
+
+.caption h2 {
+  font-size: 2rem;
+}
+
+.caption p {
+  color: #0077ff;
+  font-size: 1.5rem;
+}
+
+.container .card:hover .content .button {
+  top: 75%;
+  transition: 0.5s;
+}
+
+.container .card .content .button {
+  position: absolute;
+  padding: 1rem 3rem;
+  margin: 0 auto;
+  text-decoration: none;
+  background: #fff;
+  border: 2px #0077ff solid;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  left: 30%;
+  top: 100%;
+  text-align: center;
+}
+
+.container .card .content .button:hover {
+  transition: 0.5s;
+  background: #0077ff;
+  color: white;
+}
+/* .section-projects {
+  padding-top: 3rem;
+}
+
+.container {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
   grid-gap: 0;
   padding: 0%;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-}
 
-.waypoint {
-  background: #fff;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-#grid {
+ */
+
+/* #grid {
 }
 
 .card {
@@ -126,8 +214,25 @@ section .container {
   transition: opacity 0.5s;
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 335px;
+  transition: 0.5s;
 }
-.tile1 .card {
+
+.card:hover {
+  opacity: 0;
+}
+
+.tile1 {
+  position: relative;
+  overflow: hidden;
+  background: #ccc;
+  transition: 0.5s;
+}
+.container .tile1 .card {
   background: url("https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
     center center/cover;
 }
@@ -142,10 +247,19 @@ section .container {
 .tile4 .card {
   background: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80")
     center center/cover;
-  grid-row: 1 /3;
 }
 
-@media screen and (max-width: 1024px) {
+.text {
+  font-size: 1.5rem;
+  line-height: 20pt;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.tile1 .text {
+} */
+
+*/ @media screen and (max-width: 1024px) {
   .nav-links {
     width: 40%;
   }
