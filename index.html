@@ -203,17 +203,23 @@
 
     <script src="js/nav.js"></script>
     <script src="js/modal.js"></script>
-    <!--Fullscreen.js-->
+    <!--Fullscreen.js-->    
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.min.js" 
+    integrity="sha256-jaKhnEcPtQ4IV8NXTndyzNU7v9h+6JOfFY0tgShP+LA=" 
+    crossorigin="anonymous">
+    </script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"
       integrity="sha256-C19V3BEZT3jDhm7hctby8ZYhoXDJr0DxagpwB4RIpWc="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
     <script>
       new fullpage("#fullpage", {
         //options here
-        autoScrolling: true
+        autoScrolling: true,
+        scrollOverflow: true
       });
 
       //methods
