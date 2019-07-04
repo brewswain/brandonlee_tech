@@ -231,7 +231,7 @@ nav {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 7vh;
     background-color: #555555;
     display: flex;
     flex-direction: column;
@@ -241,7 +241,11 @@ nav {
     transform: translatex(100%);
     transition: transform 0.5s ease-in;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.9;
+  }
+
+  .nav-links li {
+    font-size: 1.6rem;
   }
 
   .fa-bars {
