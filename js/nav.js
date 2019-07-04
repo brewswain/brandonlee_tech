@@ -26,7 +26,7 @@ const navTransition = () => {
   });
 
   nav.addEventListener("click", () => {
-    menuBars.classList.toggle("fa-slash");
+    menuBars.classList.toggle("fa-times");
   });
 
   // navLinks.forEach((link, index) => {
@@ -40,7 +40,7 @@ const navTransition = () => {
 
   //Menu-Toggle animation
   menuBars.addEventListener("click", () => {
-    menuBars.classList.toggle("fa-slash");
+    menuBars.classList.toggle("fa-times");
   });
 };
 
