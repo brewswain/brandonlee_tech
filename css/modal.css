@@ -102,4 +102,7 @@
     border: 2px #0077ff solid;
     cursor: pointer;
   }
+  .modal-content .modal-body {
+    height: 15vh;
+  }
 }
