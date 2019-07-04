@@ -336,6 +336,9 @@ nav {
     padding-top: 12vh;
     margin: 0 auto;
   }
+  .container .caption {
+    padding-left: 16%;
+  }
 
   .container .card .content .button {
     position: absolute;
