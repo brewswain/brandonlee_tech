@@ -313,7 +313,6 @@ nav {
 }
 
 @media screen and (max-width: 400px) {
-
   .container .card {
     position: relative;
     overflow: hidden;
@@ -339,6 +338,6 @@ nav {
     cursor: pointer;
     margin: 0 auto;
     left: 20%;
+    bottom: 0;
   }
-}
 }
