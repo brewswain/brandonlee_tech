@@ -333,7 +333,8 @@ nav {
   }
 
   .section-text {
-    padding-top: 15vh;
+    padding-top: 12vh;
+    margin: 0 auto;
   }
 
   .container .card .content .button {
