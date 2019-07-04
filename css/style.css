@@ -244,6 +244,10 @@ nav {
     opacity: 0.9;
   }
 
+  .nav-links li {
+    font-size: 1.6rem;
+  }
+
   .fa-bars {
     display: block;
   }
@@ -338,6 +342,10 @@ nav {
   .section-text {
     padding-top: 12vh;
     margin: 0 auto;
+  }
+
+  .project-text {
+    padding-right: 8vh;
   }
   .container .caption {
     padding-left: 16%;
