@@ -214,6 +214,10 @@ nav {
     max-width: 500px;
     width: calc(40vw - 8px);
   }
+
+  .container .card .content .button {
+    left: 23%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -306,4 +310,35 @@ nav {
     margin: 0 auto;
     left: 20%;
   }
+}
+
+@media screen and (max-width: 400px) {
+
+  .container .card {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+    max-width: 500px;
+    width: calc(90vw - 8px);
+    right: 40%;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+  .container .card .content .button {
+    position: absolute;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+    text-decoration: none;
+    background: #fff;
+    border: 2px #0077ff solid;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 auto;
+    left: 20%;
+  }
+}
 }
