@@ -258,6 +258,9 @@ nav {
   .nav-collapse {
     transform: translateX(100%);
   }
+  .container .caption {
+    padding-left: 10%;
+  }
 
   .placeholder-image1 {
     max-width: 100%;
