@@ -8,7 +8,6 @@ nav.classList.replace("nav-collapse", "nav-active");
 const navTransition = () => {
   nav.addEventListener("click", () => {
     menuSliderToggle();
-    menuBarToggle();
   });
 
   //Animate Links
