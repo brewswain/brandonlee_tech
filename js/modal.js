@@ -42,7 +42,9 @@ function openModal() {
   modalProject.style.visibility = "visible";
   modalProject.style.opacity = "1";
   modalProject.style.transform = "translateY(-100%)";
-  modalProject.style.pointerEvents = "auto";
+  setTimeout(() => {
+    modalProject.style.pointerEvents = "auto";
+  }, 500);
 }
 
 // Function to close modal once outside of the modal is clicked
@@ -51,21 +53,25 @@ function closeModal(event) {
     modalProject.style.opacity = "0";
     setTimeout(() => {
       modalProject.style.visibility = "hidden";
+      modalProject.style.pointerEvents = "none";
     }, 500);
   } else if (event.target == modalProject2) {
     modalProject.style.opacity = "0";
     setTimeout(() => {
       modalProject.style.visibility = "hidden";
+      modalProject.style.pointerEvents = "none";
     }, 500);
   } else if (event.target == modalProject3) {
     modalProject.style.opacity = "0";
     setTimeout(() => {
       modalProject.style.visibility = "hidden";
+      modalProject.style.pointerEvents = "none";
     }, 500);
   } else if (event.target == modalProject4) {
     modalProject.style.opacity = "0";
     setTimeout(() => {
       modalProject.style.visibility = "hidden";
+      modalProject.style.pointerEvents = "none";
     }, 500);
   }
 }
