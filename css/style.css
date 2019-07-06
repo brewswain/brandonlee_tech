@@ -283,6 +283,10 @@ form label {
   display: inline-block;
 }
 
+.wrapper {
+  height: 100%;
+}
+
 /* .brand {
   text-align: center;
 }
@@ -669,14 +673,12 @@ form label {
   }
   .container form input {
     width: 250px;
-    float: right;
     margin-top: 0.6rem;
     height: 30px;
   }
 
-  .container form input {
-    width: 230px;
-    float: right;
+  .container form textarea {
+    width: 250px;
     margin-top: 0.6rem;
     height: 30px;
   }
