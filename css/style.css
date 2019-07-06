@@ -633,6 +633,7 @@ form label {
 
   .contact-text h1 {
     padding-top: 16vh;
+    font-size: 2rem;
   }
 
   .container form {
@@ -648,7 +649,7 @@ form label {
   .container form input {
     width: 250px;
     float: right;
-    margin-top: 0.6rem;
+    margin-top: 0.4rem;
     height: 30px;
   }
 }
