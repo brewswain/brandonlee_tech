@@ -285,6 +285,8 @@ form label {
 
 .wrapper {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .brand {
@@ -677,7 +679,7 @@ form label {
     height: 30px;
   }
 
-  .container form textarea {
+  .container form .wrapper textarea {
     width: 250px;
     margin-top: 0.6rem;
     height: 30px;
