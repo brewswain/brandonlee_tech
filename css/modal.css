@@ -10,6 +10,7 @@
   overflow: auto;
   background: rgba(0, 0, 0, 0.9);
   transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
 }
 
 .modal .button {

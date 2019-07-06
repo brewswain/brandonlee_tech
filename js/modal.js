@@ -42,6 +42,7 @@ function openModal() {
   modalProject.style.visibility = "visible";
   modalProject.style.opacity = "1";
   modalProject.style.transform = "translateY(-100%)";
+  modalProject.style.pointerEvents = "auto";
 }
 
 // Function to close modal once outside of the modal is clicked
