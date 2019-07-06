@@ -639,7 +639,14 @@ form label {
     padding-bottom: 1vh;
   }
   .container form input {
-    width: 40vh;
+    width: 250px;
+    float: right;
+    margin-top: 0.6rem;
+    height: 30px;
+  }
+
+  .container form textarea {
+    width: 250px;
     float: right;
     margin-top: 0.6rem;
     height: 30px;
