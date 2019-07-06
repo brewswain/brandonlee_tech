@@ -110,7 +110,7 @@ nav {
   margin: 0 auto;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 50%;
   grid-gap: 0;
   grid-auto-flow: dense;
@@ -135,6 +135,20 @@ nav {
 
 .container .card:hover .img-box {
   opacity: 0;
+  transition: 0.5s;
+}
+
+.container .card .content {
+  width: 100%;
+  display: flex;
+}
+
+.container .card .content .button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  height: 125%;
 }
 
 .container .card .content .caption {
@@ -159,15 +173,14 @@ nav {
   font-size: 1.5rem;
 }
 
-.container .card:hover .content button {
-  top: 75%;
+.container .card:hover .content .button-container {
+  transform: translateY(-25%);
   transition: 0.5s;
 }
 
 .button-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 .container .card .content button {
   position: absolute;
@@ -394,11 +407,8 @@ form label {
 
   .container .card {
     position: relative;
-    overflow: hidden;
     height: 250px;
-    max-width: 80vh;
-    width: calc(40vw - 8px);
-    padding-left: 100%;
+    width: 100%;
     padding-top: 1%;
     padding-bottom: 0%;
   }
@@ -427,10 +437,12 @@ form label {
   .card .img-box img {
     width: 100%;
   }
+  .container .card .content {
+    width: 100%;
+  }
 
   .container .card:hover .content .button-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    transform: translateY(-25%);
   }
 
   /* Projects */
@@ -529,7 +541,6 @@ form label {
   } */
 
   .container .card .content {
-    display: flex !important;
     width: 100%;
   }
   /* 
