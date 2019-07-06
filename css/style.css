@@ -684,4 +684,8 @@ form label {
     margin-top: 0.6rem;
     height: 30px;
   }
+
+  .container form .wrapper textarea:focus {
+    height: 50px;
+  }
 }
