@@ -218,7 +218,55 @@
       </section>
 
       <section data-anchor="about" class="section section-about">
-        <h1 class="section-text">About me</h1>
+        <h1 class="section-text about-text">About me</h1>
+        <div class="description">
+          <img src="headshot.jpg" alt="brandon_lee.png" class="headshot" />
+          <p class="description-text">
+            <br />
+            <br />
+            Curious guy who tries to understand how everything works; I tend to
+            break stuff apart,
+            <br />
+            then rebuild it, to understand the logic that went into the object's
+            construction.
+            <br />
+            Turns out this approach is pretty applicable to coding, particularly
+            with VCS!
+            <br />
+
+            <br />
+            After exposure to third-party libraries/modules, I quickly gained an
+            appreciation for clean,
+            <br />
+            legible, easily-maintainable code, and seek to constantly refine my
+            approach with every
+            <br />
+            project undertaken.
+          </p>
+        </div>
+        <div class="proficiency">
+          <ul>
+            <h3>Currently Proficient in:</h3>
+            <li>- HTML</li>
+            <li>- CSS</li>
+            <li>- Javascript</li>
+            <li>- Python</li>
+            <li>- Django</li>
+          </ul>
+
+          <ul>
+            <h3>Interested in learning:</h3>
+            <li>- React.js</li>
+            <li>- Node.js</li>
+            <li>- TensorFlow/Machine Learning libraries</li>
+          </ul>
+
+          <ul>
+            <h3>Community Goals:</h3>
+            <li>- Work on open source projects.</li>
+            <li>- Create a twitch channel dedicated to coding.</li>
+          </ul>
+        </div>
       </section>
 
       <section data-anchor="contact" class="section section-contact">
@@ -243,62 +291,29 @@
               </div>
               <div class="Message">
                 <label for="message">Message</label>
-                <input
+                <textarea
                   name="message"
                   id="message"
                   rows="4"
                   required
-                ></input>
+                ></textarea>
               </div>
               <div class="button-container">
                 <button class="contact-button">Submit</button>
               </div>
             </div>
           </form>
+          <div class="contact-information">
+            <a href="mailto:business@brandonlee.tech"
+              >business@brandonlee.tech</a
+            >
+          </div>
         </div>
       </section>
 
-      <!-- <div class="container">
-              <h1 class="brand"><span>Blee</span>  Web Dev</h1>
-              <div class="wrapper">
-                <div class="contact-info">
-                  <h3>Blee Web Dev</h3>
-                  <ul>
-                    <li>44 street</li>
-                    <li>1(555) 555-5555</li>
-                    <li>business@brandonlee.tech</li>
-                  </ul>                 
-                </div>
-                <div class="contact-form">
-                  
-                  <form >
-                    <p>
-                      <label >Name</label>
-                      <input type="text"name="name">
-                    </p>
-                 
-                    <p>
-                      <label >Email Address</label>
-                      <input type="email"name="email">
-                    </p>
-                    <p>
-                      <label >Subject</label>
-                      <input type="text"name="subject">
-                    </p>
-                    <p class="full">
-                      <label >Message</label>
-                      <textarea name="message" rows="5"></textarea>    
-                    </p>
-                    <p class="full">
-                      <button>Submit</button>
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </div> -->
-
       <script src="js/nav.js"></script>
       <script src="js/modal.js"></script>
+
       <!--Fullscreen.js-->
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/vendors/scrolloverflow.min.js"
@@ -311,6 +326,8 @@
         integrity="sha256-C19V3BEZT3jDhm7hctby8ZYhoXDJr0DxagpwB4RIpWc="
         crossorigin="anonymous"
       ></script>
+
+      <!-- Script needed to make Fullpage.js work on container with the id of 'fullpage' -->
       <script>
         new fullpage("#fullpage", {
           //options here
