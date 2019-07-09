@@ -220,7 +220,6 @@ nav {
   display: flex;
   justify-content: center;
   height: 60%;
-  /* background-color: #333333; */
 }
 
 .description img {
@@ -259,6 +258,12 @@ nav {
 .proficiency ul li {
   line-height: 1.5rem;
 }
+
+.headshot {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Contact Section */
 
 .contact-text {
@@ -402,7 +407,22 @@ form label {
     transform: translateY(-25%);
   }
 
-  /* Projects */
+  /* About me */
+
+  .section-about .description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 15vh;
+    /* background-color: #333333; */
+  }
+
+  .proficiency {
+    justify-content: center;
+    align-self: center;
+    padding-left: 3%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -467,6 +487,8 @@ form label {
     }
   }
 
+  /* Projects */
+
   .section-projects .container {
     max-width: 400px;
     height: 100%;
@@ -490,7 +512,6 @@ form label {
     width: 100%;
   }
 
-  /* Projects */
   .section-text {
     padding-top: 12vh;
     margin: 0 auto;
@@ -523,6 +544,38 @@ form label {
 
   .button-container {
     display: flex;
+  }
+
+  /* About section */
+  .about-text {
+    top: 1vh;
+  }
+
+  .section-about {
+    background: #363636;
+    color: whitesmoke;
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .description-text {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .description img {
+    display: none;
+  }
+
+  .proficiency {
+    position: relative;
+    flex-direction: column;
+    top: -5vh;
   }
 }
 
