@@ -647,9 +647,12 @@ form label {
   }
 
   .contact-text h1 {
-    padding-top: 22vh;
+    padding-top: 20vh;
   }
 
+  .contact-text h3 {
+    padding-bottom: 5vh;
+  }
   .container form {
     margin-top: 0%;
     padding-bottom: 100%;
