@@ -10,7 +10,11 @@ const modalButton2 = document.getElementById("project-2");
 const modalButton3 = document.getElementById("project-3");
 const modalButton4 = document.getElementById("project-4");
 
-const closeButton = document.querySelector(".close-button");
+// Close Modal from button click
+const closeButton1 = document.querySelector(".button-1");
+const closeButton2 = document.querySelector(".button-2");
+const closeButton3 = document.querySelector(".button-3");
+const closeButton4 = document.querySelector(".button-4");
 
 //Mutable modal variable
 let modalProject;
@@ -37,7 +41,10 @@ modalButton4.addEventListener("click", () => {
 });
 
 // Close modal if X button is clicked
-closeButton.addEventListener("click", buttonClose);
+closeButton1.addEventListener("click", buttonClose);
+closeButton2.addEventListener("click", buttonClose);
+closeButton3.addEventListener("click", buttonClose);
+closeButton4.addEventListener("click", buttonClose);
 
 // Close modal if clicked outside content box
 window.addEventListener("click", closeModal);

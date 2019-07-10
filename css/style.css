@@ -460,8 +460,8 @@ form label {
     opacity: 0.9;
     padding: 1rem;
     justify-content: flex-start;
-    line-height: 6rem;
-    align-items: flex-end;
+    line-height: 4rem;
+    align-items: center;
   }
 
   .nav-links li {
