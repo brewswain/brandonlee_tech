@@ -589,6 +589,8 @@ form label {
     position: relative;
     flex-direction: column;
     top: -5vh;
+    background: #363636;
+    color: whitesmoke;
   }
 }
 
