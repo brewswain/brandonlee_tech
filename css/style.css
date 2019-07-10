@@ -217,6 +217,10 @@ nav {
 .about-text {
   top: 10%;
 }
+.section-about {
+  background: #363636;
+  color: whitesmoke;
+}
 
 .section-about .description {
   padding-top: 10vh;
@@ -245,8 +249,8 @@ nav {
   align-self: center;
   bottom: 0;
   width: 100%;
-  background: #363636;
-  color: whitesmoke;
+  background: whitesmoke;
+  color: black;
 }
 
 .proficiency ul {
@@ -260,6 +264,7 @@ nav {
 
 .proficiency ul li {
   line-height: 1.5rem;
+  font-weight: 400;
 }
 
 .headshot {
