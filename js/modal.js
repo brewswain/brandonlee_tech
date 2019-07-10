@@ -10,6 +10,8 @@ const modalButton2 = document.getElementById("project-2");
 const modalButton3 = document.getElementById("project-3");
 const modalButton4 = document.getElementById("project-4");
 
+const closeButton = document.querySelector(".close-button");
+
 //Mutable modal variable
 let modalProject;
 
@@ -33,6 +35,9 @@ modalButton4.addEventListener("click", () => {
   modalProject = modalProject4;
   openModal();
 });
+
+// Close modal if X button is clicked
+closeButton.addEventListener("click", buttonClose);
 
 // Close modal if clicked outside content box
 window.addEventListener("click", closeModal);
@@ -74,4 +79,12 @@ function closeModal(event) {
       modalProject.style.pointerEvents = "none";
     }, 500);
   }
+}
+
+function buttonClose() {
+  modalProject.style.opacity = "0";
+  setTimeout(() => {
+    modalProject.style.visibility = "hidden";
+    modalProject.style.pointerEvents = "none";
+  }, 500);
 }
