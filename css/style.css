@@ -491,6 +491,9 @@ form label {
     display: block;
   }
 
+.background-image {
+  background-size: cover;
+}
   /* Mobile Nav animation*/
 
   @keyframes navlinkFade {
