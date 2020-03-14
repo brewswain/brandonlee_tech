@@ -466,7 +466,7 @@ form label {
 
   .nav-links li {
     font-size: 1.4rem;
-    padding-right: 1rem;
+    /* padding-right: 1rem; */
   }
 
   .fa-bars {
@@ -491,9 +491,9 @@ form label {
     display: block;
   }
 
-.background-image {
-  background-size: cover;
-}
+  .background-image {
+    background-size: cover;
+  }
   /* Mobile Nav animation*/
 
   @keyframes navlinkFade {
