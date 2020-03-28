@@ -1,11 +1,11 @@
-import firebase from "firebase/app";
-import "firebase/firestore";
-
 const config = {
-  // Enter Your firebase config Object here and rename file to:
-  // firebase.utils.js
-  // this will ensure everything works as needed once you've
-  // set up your own firebase project.
+  apiKey: "AIzaSyC-ebRiUrWI-CH42Im3W9nLBsARaB-jPJE",
+  authDomain: "portfolio-backend-ad46f.firebaseapp.com",
+  databaseURL: "https://portfolio-backend-ad46f.firebaseio.com",
+  projectId: "portfolio-backend-ad46f",
+  storageBucket: "portfolio-backend-ad46f.appspot.com",
+  messagingSenderId: "1056667936535",
+  appId: "1:1056667936535:web:51b6443af0f6fa1df67952"
 };
 
 firebase.initializeApp(config);
@@ -17,7 +17,7 @@ let userName = document.querySelector("#user-name");
 let userEmail = document.querySelector("#user-email");
 let userMessage = document.querySelector("#user-message");
 
-const db = firestore.collection("form/{formId}/messages");
+const db = firestore.collection("form/q0D3abohoBylt6zXhETv/messages");
 
 submitButton.addEventListener("click", () => {
   let userNameInput = userName.value;
@@ -31,7 +31,7 @@ submitButton.addEventListener("click", () => {
       message: userMessageInput
     })
     .then(() => {
-      console.log("Data Saved");
+      alert("message sent!");
       window.location.reload();
     })
     .catch(error => {

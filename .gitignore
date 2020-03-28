@@ -42,6 +42,4 @@ Thumbs.db
 .history/
 
 # custom 
-
-js/firebase.utils.js
 node_modules/
