@@ -248,7 +248,7 @@
             break stuff apart,
             <br />
             then rebuild it, to understand the object's logic. Turns out this
-            approach is pretty applicable
+            approach is pretty useful
             <br />
             when learning to code, particularly with VCS!
             <br />
@@ -260,23 +260,30 @@
             legible, easily-maintainable code, and seek to constantly refine my
             approach with every
             <br />
-            project undertaken.
+            project undertaken. This includes using external solutions for
+            problems instead of trying to
+            <br />
+            handcraft every solution I need.
           </p>
         </div>
         <div class="proficiency">
           <ul>
             <h3>Currently Proficient in:</h3>
-            <li>- HTML</li>
-            <li>- CSS</li>
+            <li>- HTML/CSS</li>
             <li>- Javascript</li>
             <li>- Python</li>
             <li>- Django</li>
+            <li>- React.js</li>
+            <li>- Node.js</li>
+            <li>- Google Firebase</li>
           </ul>
 
           <ul>
             <h3>Interested in learning:</h3>
-            <li>- React.js</li>
-            <li>- Node.js</li>
+            <li>- TypeScript</li>
+            <li>- Rust</li>
+            <li>- WebAssembly</li>
+            <li>- Golang</li>
             <li>- TensorFlow/Machine Learning libraries</li>
           </ul>
 
@@ -298,27 +305,26 @@
             <div class="wrapper">
               <div class="name">
                 <label for="name">Name</label>
-                <input type="text" id="name" required />
+                <input type="text" id="name user-name" required />
               </div>
               <div class="email-address">
                 <label for="email">Email address</label>
-                <input type="email" id="email" required />
+                <input type="email" id="email user-email" required />
               </div>
-              <div class="subject">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" required />
-              </div>
+
               <div class="Message">
                 <label for="message">Message</label>
                 <textarea
                   name="message"
-                  id="message"
+                  id="message user-message"
                   rows="4"
                   required
                 ></textarea>
               </div>
               <div class="button-container">
-                <button class="contact-button">Submit</button>
+                <button class="contact-button" id="submit-button">
+                  Submit
+                </button>
               </div>
             </div>
           </form>
@@ -333,9 +339,14 @@
       <script src="js/nav.js"></script>
       <script src="js/modal.js"></script>
 
-      <!--Fullscreen.js-->
+      <!-- Fullscreen.js -->
       <script src="js/scrolloverflow.min.js"></script>
       <script src="js/fullpage.min.js"></script>
+
+      <!-- Firebase integration -->
+      <script src="/__/firebase/7.10.0/firebase-app.js"></script>
+      <script src="/__/firebase/7.10.0/firebase-firestore.js"></script>
+      <script src="scripts/firebase.utils.js"></script>
 
       <!-- Script needed to make Fullpage.js work on container with the id of 'fullpage' -->
       <script>
