@@ -58,6 +58,8 @@
       </div>
     </nav>
 
+    <!-- Modals Section -->
+
     <div id="modal-project1" class="modal">
       <div class="modal-content">
         <div class="modal-header">
@@ -67,7 +69,7 @@
         <div class="modal-body">
           <p>
             This is my Demo Project, That I made using Django, Javascript, and
-            HTML/CSS. This app produces a newsfeed customised based on the
+            HTML/CSS. This app produces a newsfeed customized based on the
             user's browsing habits. Any data gleaned from this app will not be
             sold nor tampered with.
           </p>
@@ -165,6 +167,25 @@
         </div>
       </div>
     </div>
+
+    <div class="contact-modal-success">
+      <div class="contact-modal-container">
+        <div class="contact-modal-body">
+          <p class="contact-modal-message">Message Sent Successfully!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-modal-failure">
+      <div class="contact-modal-container">
+      <div class="contact-modal-body">
+        <p class="contact-modal-message">Something went wrong, please click email address to get in contact directly.</p>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- Main Page Section -->
 
     <section id="fullpage">
       <div data-anchor="home" class="section section-home">
@@ -301,33 +322,40 @@
             <h1 class="section-text contact-text">CONTACT</h1>
             <h3 class="contact-text">Wanna get in touch?</h3>
           </div>
-          <form action>
-            <div class="wrapper">
-              <div class="name">
-                <label for="name">Name</label>
-                <input type="text" id="user-name" required />
+ 
+            <div class="contact-container">
+              <div class="form-container">
+                <div class="contact-form">
+                  <div class="form-caption">Name</div>
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-data large"
+                    id="user-name"
+                  />
+                  <br />
+                  <div class="form-caption">Email Address</div>
+                  <input
+                    type="text"
+                    name="email"
+                    class="form-data large"
+                    id="user-email"
+                  />
+                  <br />
+                  <div class="form-caption ">Message</div>
+                  <textarea
+                    name="message"
+                    class="form-data form-message"
+                    id="user-message"
+                
+                    rows="4"
+                  ></textarea>
+                  <br />    
+                  <div class="button-container">
+                    <button class="submit-button">Submit</button>
+                  </div>
+               
               </div>
-              <div class="email-address">
-                <label for="email">Email address</label>
-                <input type="email" id="user-email" required />
-              </div>
-
-              <div class="Message">
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  id="user-message"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <div class="button-container">
-                <button class="contact-button" id="submit-button">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
           <div class="contact-information">
             <a href="mailto:business@brandonlee.tech"
               >business@brandonlee.tech</a
@@ -355,7 +383,6 @@
           //options here
           autoScrolling: true,
           scrollOverflow: true,
-          licenseKey: null
         });
 
         //methods

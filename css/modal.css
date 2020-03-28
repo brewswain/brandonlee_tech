@@ -1,4 +1,7 @@
-.modal {
+.modal
+/* .contact-modal-success,
+.contact-modal-failure */
+ {
   visibility: hidden;
   opacity: 0;
   position: fixed;
@@ -11,6 +14,44 @@
   background: rgba(0, 0, 0, 0.9);
   transition: opacity 0.5s ease-in-out;
   pointer-events: none;
+}
+
+.contact-modal-success {
+  position: fixed;
+  opacity: 0;
+  z-index: 1000;
+  left: 0;
+  top: 11vh;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.contact-modal-failure {
+  opacity: 0;
+
+  position: fixed;
+  z-index: 1000;
+  top: 11vh;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.contact-modal-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-modal-body {
+  display: flex;
+  align-items: center;
+  background: #5aa0f0;
+  color: black;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
 }
 
 .close-button {

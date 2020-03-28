@@ -12,7 +12,7 @@ firebase.initializeApp(config);
 
 let firestore = firebase.firestore();
 
-let submitButton = document.querySelector("#submit-button");
+let submitButton = document.querySelector(".submit-button");
 let userName = document.querySelector("#user-name");
 let userEmail = document.querySelector("#user-email");
 let userMessage = document.querySelector("#user-message");
@@ -31,10 +31,32 @@ submitButton.addEventListener("click", () => {
       message: userMessageInput
     })
     .then(() => {
-      alert("message sent!");
-      window.location.reload();
+      successPopup();
     })
     .catch(error => {
+      failurePopup();
       console.log(error);
     });
 });
+
+// success/failure message function
+
+let successModal = document.querySelector(".contact-modal-success");
+let failureModal = document.querySelector(".contact-modal-failure");
+
+function successPopup() {
+  successModal.style.visibility = "visible";
+  successModal.style.opacity = "1";
+  setTimeout(() => {
+    successModal.style.opacity = "0";
+    window.location.reload();
+  }, 1000);
+}
+
+function failurePopup() {
+  failureModal.style.visibility = "visible";
+  failureModal.style.opacity = "1";
+  setTimeout(() => {
+    failureModal.style.opacity = "0";
+  }, 500);
+}
