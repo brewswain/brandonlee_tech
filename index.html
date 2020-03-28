@@ -305,18 +305,18 @@
             <div class="wrapper">
               <div class="name">
                 <label for="name">Name</label>
-                <input type="text" id="name user-name" required />
+                <input type="text" id="user-name" required />
               </div>
               <div class="email-address">
                 <label for="email">Email address</label>
-                <input type="email" id="email user-email" required />
+                <input type="email" id="user-email" required />
               </div>
 
               <div class="Message">
                 <label for="message">Message</label>
                 <textarea
                   name="message"
-                  id="message user-message"
+                  id="user-message"
                   rows="4"
                   required
                 ></textarea>
@@ -344,8 +344,10 @@
       <script src="js/fullpage.min.js"></script>
 
       <!-- Firebase integration -->
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
 
-      <script src="js/firebase.utils.js"></script>
+      <script type="module" src="js/firebase.utils.js"></script>
 
       <!-- Script needed to make Fullpage.js work on container with the id of 'fullpage' -->
       <script>
