@@ -24,7 +24,8 @@ ul {
 
 .background-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(../img/background_experiment-min.png);
+    url(../img/background_experiment_min.jpg);
+
   height: 100vh;
 }
 
