@@ -27,6 +27,7 @@ ul {
     url(../img/background_experiment_min.jpg);
 
   height: 100vh;
+  background-size: cover;
 }
 
 .image-caption {
