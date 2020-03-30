@@ -122,14 +122,13 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 50%;
-  grid-gap: 0;
   grid-auto-flow: dense;
 }
 
 .container .card {
   position: relative;
   overflow: hidden;
-  height: 335px;
+  height: 306px;
   max-width: 500px;
   display: flex;
 }
@@ -583,7 +582,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .section-projects {
     display: flex;
     justify-content: center;
@@ -678,5 +677,11 @@ nav {
   .container form .wrapper textarea:focus {
     height: 50px;
     transition: 0.3s;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
