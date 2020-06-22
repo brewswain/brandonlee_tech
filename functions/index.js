@@ -23,14 +23,14 @@ exports.firebaseEmail = functions.firestore
     const message = change.data() || {};
 
     const msg = {
-      to: "business@brandonlee.tech",
+      to: "blee.code@gmail.com",
       from: "contact-form@brandonlee.tech",
       templateId: SENDGRID_TEMPLATE_KEY,
       dynamic_template_data: {
         name: message.name,
         email: message.email,
-        message: message.message
-      }
+        message: message.message,
+      },
     };
 
     return sgMail.send(msg);
